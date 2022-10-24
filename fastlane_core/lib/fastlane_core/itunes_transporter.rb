@@ -483,7 +483,7 @@ module FastlaneCore
       else
         [
           Helper.transporter_java_executable_path.shellescape,
-          "-Djava.ext.dirs=#{Helper.transporter_java_ext_dir.shellescape}",
+          "-classpath #{Helper.transporter_java_ext_dir.shellescape}",
           '-XX:NewSize=2m',
           '-Xms32m',
           '-Xmx1024m',
@@ -521,7 +521,7 @@ module FastlaneCore
       else
         [
           Helper.transporter_java_executable_path.shellescape,
-          "-Djava.ext.dirs=#{Helper.transporter_java_ext_dir.shellescape}",
+          "classpath #{Helper.transporter_java_ext_dir.shellescape}",
           '-XX:NewSize=2m',
           '-Xms32m',
           '-Xmx1024m',
@@ -558,7 +558,7 @@ module FastlaneCore
       else
         [
           Helper.transporter_java_executable_path.shellescape,
-          "-Djava.ext.dirs=#{Helper.transporter_java_ext_dir.shellescape}",
+          "classpath #{Helper.transporter_java_ext_dir.shellescape}",
           '-XX:NewSize=2m',
           '-Xms32m',
           '-Xmx1024m',
@@ -593,7 +593,7 @@ module FastlaneCore
       else
         [
           Helper.transporter_java_executable_path.shellescape,
-          "-Djava.ext.dirs=#{Helper.transporter_java_ext_dir.shellescape}",
+          "-classpath #{Helper.transporter_java_ext_dir.shellescape}",
           '-XX:NewSize=2m',
           '-Xms32m',
           '-Xmx1024m',
